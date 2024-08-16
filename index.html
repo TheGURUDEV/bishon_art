@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bishon Paul - Master of Pencil Portraits</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-bg"></div>
+        <div class="header-animation"></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Bishon Paul</h1>
+            <h2>Bringing Life to Paper: Exquisite Pencil Portraits</h2>
+            <p>Welcome to my world of pencil artistry. I create lifelike portraits that capture the soul of my subjects.</p>
+            <div class="social-links">
+                <a href="https://m.youtube.com/@bishon_paul" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+                <a href="https://www.instagram.com/bishon.paul/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="gallery">
+                <figure class="portfolio-item">
+                    <img src="images/hanuman.jpg" alt="Hanuman Sketch">
+                    <figcaption>
+                        <h3>Hanuman</h3>
+                        <p>A detailed sketch of Lord Hanuman</p>
+                        <a href="images/hanuman.jpg" class="lightbox">View Full Size</a>
+                    </figcaption>
+                </figure>
+                <figure class="portfolio-item">
+                    <img src="images/mithi.jpg" alt="Mithi Sketch">
+                    <figcaption>
+                        <h3>Mithi</h3>
+                        <p>A beautiful portrait of Mithi</p>
+                        <a href="images/mithi.jpg" class="lightbox">View Full Size</a>
+                    </figcaption>
+                </figure>
+                <figure class="portfolio-item">
+                    <img src="images/riya.jpg" alt="Riya Sketch">
+                    <figcaption>
+                        <h3>Riya</h3>
+                        <p>A lifelike sketch of Riya</p>
+                        <a href="images/riya.jpg" class="lightbox">View Full Size</a>
+                    </figcaption>
+                </figure>
+                <figure class="portfolio-item">
+                    <img src="images/tahmid.jpg" alt="Tahmid Sketch">
+                    <figcaption>
+                        <h3>Tahmid</h3>
+                        <p>A captivating portrait of Tahmid</p>
+                        <a href="images/tahmid.jpg" class="lightbox">View Full Size</a>
+                    </figcaption>
+                </figure>
+                <figure class="portfolio-item">
+                    <img src="images/tilok.jpg" alt="Tilok Sketch">
+                    <figcaption>
+                        <h3>Tilok</h3>
+                        <p>An expressive sketch of Tilok</p>
+                        <a href="images/tilok.jpg" class="lightbox">View Full Size</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="videos">
+            <h2>My Drawing Process</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/px48_3jdAfM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/k-5rZsOeZrU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <h2>Pricing</h2>
+            <table>
+                <tr>
+                    <th>Size</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>A3</td>
+                    <td>Rs. 1,000</td>
+                </tr>
+                <tr>
+                    <td>A4</td>
+                    <td>Rs. 800</td>
+                </tr>
+                <tr>
+                    <td>A5</td>
+                    <td>Rs. 400</td>
+                </tr>
+            </table>
+            <p><strong>Note:</strong> These are basic prices. Charges may vary depending on the complexity and detail of the work required.</p>
+            <p>Contact me for custom requests and detailed pricing.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:bishonpdpaul@gmail.com">bishonpdpaul@gmail.com</a></p>
+            <p>Phone: <a href="tel:+918945948505">+91 8945 948 505</a></p>
+            <form id="contact-form" action="send_email.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bishon Paul. All rights reserved.</p>
+    </footer>
+
+    <div id="lightbox-overlay" class="lightbox-overlay">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
